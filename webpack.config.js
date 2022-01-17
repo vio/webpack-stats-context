@@ -3,10 +3,9 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist')
   },
   stats: {
-    assets: true,
-    modules: true
+    context: './src'
   }
 };
